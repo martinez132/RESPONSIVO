@@ -14,7 +14,7 @@ Proyecto de una SPA con **React + TypeScript** y **Bootstrap**, que implementa u
 ## Capturas
 | Móvil (≤600px) | Tableta (601–1024px) | Escritorio (>1024px) |
 | --- | --- | --- |
-| ![Móvil](docs/screenshots/S1.png) | ![Tableta](docs/screenshots/S2.png) | ![Escritorio](docs/screenshots/S3.png) |
+|![Móvil](responsive-react-ts/docs/screenshots/S1.png) | ![Tableta](responsive-react-ts/docs/screenshots/S2.png) | ![Escritorio](responsive-react-ts/docs/screenshots/S3.png) |
 
 ## Enfoque de diseño responsivo
 - **Framework de estilo:** Bootstrap (rejilla, utilidades y navbar).
