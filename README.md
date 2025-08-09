@@ -1,5 +1,5 @@
 # RESPONSIVO
-Diseño Responsivo
+
 
 # Diseño Responsivo con React + TypeScript + Bootstrap
 
