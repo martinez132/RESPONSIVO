@@ -1,0 +1,26 @@
+
+/* Ajustes generales para legibilidad */
+:root { --body-line-height: 1.6; }
+body { line-height: var(--body-line-height); }
+
+/* ≤600px: 1 columna y texto más legible */
+@media (max-width: 600px) {
+  body { font-size: 16px; }
+  main p { margin-bottom: 1rem; }
+}
+
+/* 601–1024px: 2 columnas + mejor espaciado */
+@media (min-width: 601px) and (max-width: 1024px) {
+  body { font-size: 17px; }
+  .row.g-3 { --bs-gutter-x: 1.25rem; --bs-gutter-y: 1.25rem; }
+}
+
+/* >1024px: 3 columnas con clase custom */
+@media (min-width: 1025px) {
+  .col-desktop-4 { width: 33.3333333%; }
+}
+.col-desktop-4 { flex: 0 0 auto; }
+
+.card-title { font-weight: 600; }
+footer a { color: inherit; }
+footer a:hover { opacity: .8; }
