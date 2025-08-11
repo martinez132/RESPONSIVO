@@ -1,27 +1,29 @@
-import logo from "../assets/logo.webp";
 import { Navbar, Nav, Container } from "react-bootstrap";
 
 export default function Header() {
   return (
-    <Navbar bg="light" expand="md" className="shadow-sm sticky-top">
+    <Navbar bg="light" expand="md" className="shadow-sm">
       <Container>
-        <Navbar.Brand href="#">
+        {/* Logo y nombre */}
+        <Navbar.Brand href="#inicio" className="d-flex align-items-center">
           <img
-            src={logo} // aquí usamos la imagen importada
-            alt="Logo"
-            className="me-2 rounded"
-            width="32"
-            height="32"
+            src="https://cdn-icons-png.flaticon.com/512/590/590836.png" // Logo de taza de café
+            alt="Logo Café Aurora"
+            width="40"
+            height="40"
+            className="me-2"
           />
-          Mi Sitio
+          <span className="fw-bold">Café Aurora</span>
         </Navbar.Brand>
 
-        {/* Hamburguesa por debajo de md; ≤600 queda cubierto */}
-        <Navbar.Toggle aria-controls="main-nav" />
-        <Navbar.Collapse id="main-nav">
+        {/* Botón hamburguesa en móvil */}
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+
+        {/* Links */}
+        <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
             <Nav.Link href="#inicio">Inicio</Nav.Link>
-            <Nav.Link href="#articulos">Artículos</Nav.Link>
+            <Nav.Link href="#articulos">Productos</Nav.Link>
             <Nav.Link href="#servicios">Servicios</Nav.Link>
             <Nav.Link href="#contacto">Contacto</Nav.Link>
           </Nav>
@@ -30,4 +32,5 @@ export default function Header() {
     </Navbar>
   );
 }
+
 
